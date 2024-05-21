@@ -1,0 +1,108 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(0, 0%, 0%);
+  color: #ffffff;
+}
+
+body::before {
+  content: "";
+  background-image: url("../images/bg-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cabecalho img {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.selecao-de-personagens {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: calc(100vh - 152px);
+  justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 585px;
+  gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffb247;
+  width: 100%;
+  text-align: center;
+}
+
+.lista-de-personagens .personagem img {
+  /* width: 100%;
+  height: 100%; */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.lista-de-personagens .personagem.selecionado {
+  box-shadow: 0px 0px 24px 5px #ffb247;
+  transition: box-shadow 0.3s;
+  transform: scale(1.1);
+  border-radius: 50%;
+}
+
+.personagem-selecionado {
+  text-align: center;
+  max-height: 530px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.personagem-selecionado .personagem-grande {
+  width: 380px;
+  height: 380px;
+}
+
+.personagem-selecionado .nome-personagem {
+  border-bottom: 2px solid #ffb247;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  width: 420px;
+}

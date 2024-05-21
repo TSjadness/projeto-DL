@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Demon Slayer -Dev em dobro</title>
+    <link rel="icon" href="/assets/images/logo-icone.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/estilo.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/responsivo.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./assets/images/logo-icone.png" alt="Logo x-men" />
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li
+            class="personagem selecionado"
+            id="tengen"
+            data-name="tengen uzui"
+            data-description="
+            Tengen Uzui é um dos Hashira, o Pilar do Som. Ele é um homem alto e musculoso com cabelo loiro e olhos azuis.Ele é um espadachim habilidoso e é capaz de lutar contra vários demônios ao mesmo tempo. Ele é um dos personagens mais fortes da série, e é um dos poucos Hashira que sobreviveu à batalha contra Muzan Kibutsuji."
+          >
+            <img
+              src="./assets/images/card-tengen.jpg"
+              alt="Personagem tengen uzui"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="nezuko"
+            data-name="Nezuko Kamado"
+            data-description="
+            Nezuko Kamado é a irmã mais nova de Tanjiro Kamado. Ela foi transformada em um demônio por Muzan Kibutsuji, o demônio original. Ela é uma personagem muito forte e corajosa, e é capaz de lutar contra demônios muito poderosos.
+            "
+          >
+            <img
+              src="./assets/images/card-nezuko.jpg"
+              alt="Personagem Nezuko Kamado"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="tanjiro"
+            data-name="Tanjirō Kamado"
+            data-description="
+            Tanjiro Kamado é o protagonista da série. Ele é um jovem espadachim que se torna um caçador de demônios após sua família ser massacrada por um demônio. Ele é um personagem muito forte e corajoso, e é capaz de lutar contra demônios muito poderosos.
+            "
+          >
+            <img
+              src="./assets/images/card-tanjiro.jpg"
+              alt="Personagem Tanjirō Kamado"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="zenitsu"
+            data-name="Zenitsu Agatsuma"
+            data-description="
+            Zenitsu Agatsuma é um dos personagens principais da série. Ele é um espadachim que se torna um caçador de demônios após ser salvo por Tanjiro Kamado. Ele é um personagem muito forte e corajoso, e é capaz de lutar contra demônios muito poderosos."
+          >
+            <img
+              src="./assets/images/card-zenitsu.jpg"
+              alt="Personagem Zenitsu Agatsuma"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="inosuke"
+            data-name="Inosuke Hashibira"
+            data-description="
+            Inosuke Hashibira é um dos personagens principais da série. Ele é um espadachim que se torna um caçador de demônios após ser salvo por Tanjiro Kamado. Ele é um personagem muito forte e corajoso, e é capaz de lutar contra demônios muito poderosos."
+          >
+            <img
+              src="./assets/images/card-inosuke.jpg"
+              alt="Personagem Inosuke Hashibira"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="rengoku"
+            data-name="Kyojuro Rengoku"
+            data-description="
+            Kyojuro Rengoku é um dos Hashira, o Pilar do Fogo. Ele é um homem alto e musculoso com cabelo laranja e olhos azuis. Ele é um espadachim habilidoso e é capaz de lutar contra vários demônios ao mesmo tempo. Ele é um dos personagens mais fortes da série, e é um dos poucos Hashira que sobreviveu à batalha contra Muzan Kibutsuji."
+          >
+            <img
+              src="./assets/images/card-rengoku.jpg"
+              alt="Personagem Kyojuro Rengoku"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="giyu"
+            data-name="giyu"
+            data-description="
+            Giyu Tomioka é um dos Hashira, o Pilar da Água. Ele é um homem alto e musculoso com cabelo preto e olhos azuis. Ele é um espadachim habilidoso e é capaz de lutar contra vários demônios ao mesmo tempo. Ele é um dos personagens mais fortes da série, e é um dos poucos Hashira que sobreviveu à batalha contra Muzan Kibutsuji."
+          >
+            <img
+              src="./assets/images/card-giyu.jpg"
+              alt="Personagem Muzan Kibutsuji"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="shinobu"
+            data-name="Shinobu Kocho"
+            data-description="
+            Shinobu Kocho é um dos Hashira, o Pilar dos Insetos. Ela é uma mulher alta e magra com cabelo verde e olhos azuis. Ela é uma espadachim habilidosa e é capaz de lutar contra vários demônios ao mesmo tempo. Ela é um dos personagens mais fortes da série, e é um dos poucos Hashira que sobreviveu à batalha contra Muzan Kibutsuji."
+          >
+            <img
+              src="./assets/images/card-shinobu.jpg"
+              alt="Personagem Shinobu Kocho"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="muzan"
+            data-name="Muzan Kibutsuji"
+            data-description="
+            Muzan Kibutsuji é o principal antagonista da série. Ele é o demônio original e é o responsável por transformar Nezuko Kamado em um demônio. Ele é um dos demônios mais poderosos da série, e é capaz de lutar contra vários Hashira ao mesmo tempo."
+          >
+            <img
+              src="./assets/images/card-muzan.jpg"
+              alt="Personagem Muzan Kibutsuji"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./assets/images/card-tanjiro.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Tanjirō Kamado</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Tanjiro Kamado é o protagonista da série. Ele é um jovem espadachim
+            que se torna um caçador de demônios após sua família ser massacrada
+            por um demônio. Ele é um personagem muito forte e corajoso, e é
+            capaz de lutar contra demônios muito poderosos.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
